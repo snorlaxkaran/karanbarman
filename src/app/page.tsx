@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <MaxWidthWrapper className="">
-      <div className="flex flex-col gap-20">
+      <div className="flex flex-col gap-0">
         <div className="border-b border-x border-neutral-300/80 py-10">
           {/* TODO: Summary about Karan Barman */}
           <div className="flex flex-col gap-6 p-2">
@@ -67,9 +67,65 @@ export default function Home() {
         </div>
         <div className="border-b border-x border-neutral-300/80 py-10">
           {/* TODO: Experience */}
+          <div className="flex flex-col gap-6 p-2">
+            <div>
+              <h1 className="text-2xl font-medium">Experience</h1>
+            </div>
+          </div>
         </div>
         <div className="border-b border-x border-neutral-300/80 py-10">
-          {/* TODO: Education */}
+          {/* Education Section */}
+          <div className="flex flex-col gap-6 p-2">
+            <div>
+              <h1 className="text-2xl font-medium">Education</h1>
+            </div>
+            <div className="flex gap-2">
+              {/* Graduate Icon Container */}
+              <div className="rounded-full w-9 h-9 border p-1 bg-gray-100 dark:bg-gray-500 flex items-center justify-center">
+                <Image
+                  src={"/svgs/graduate.svg"}
+                  alt="hat"
+                  width={20}
+                  height={20}
+                  className="block"
+                />
+              </div>
+              {/* Education Details */}
+              <div className="flex flex-col">
+                <div className="text-lg font-medium">
+                  <h2>University of Rajasthan</h2>
+                </div>
+                <div>
+                  <p className="text-[#666]">
+                    B.Sc, Physics, Chemistry & Mathematics
+                  </p>
+                  <p className="text-[#888]">2022 - 2025</p>
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-2">
+              {/* Graduate Icon Container */}
+              <div className="rounded-full w-9 h-9 border p-1 bg-gray-100 dark:bg-gray-500 flex items-center justify-center text-[#666]">
+                <Image
+                  src={"/svgs/graduate.svg"}
+                  alt="hat"
+                  width={20}
+                  height={20}
+                  className="block"
+                />
+              </div>
+              {/* Education Details */}
+              <div className="flex flex-col">
+                <div className="text-lg font-medium">
+                  <h2>Gyan Vidhya Mandir</h2>
+                </div>
+                <div>
+                  <p className="text-[#666]">12th, Science</p>
+                  <p className="text-[#888]">2020 - 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="border-b border-x border-neutral-300/80 py-10">
           {/* TODO: Projects */}

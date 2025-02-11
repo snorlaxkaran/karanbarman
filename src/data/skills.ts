@@ -15,14 +15,14 @@ export const skills = [
     image: "typescript",
   },
   {
-    name: "JavaScript",
-    value: "javascript",
-    image: "javascript",
-  },
-  {
     name: "Node.js",
     value: "node",
     image: "node",
+  },
+  {
+    name: "JavaScript",
+    value: "javascript",
+    image: "javascript",
   },
   {
     name: "MongoDB",

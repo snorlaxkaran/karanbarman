@@ -88,12 +88,14 @@ export default function Home() {
               </div>
               {/* Education Details */}
               <div className="flex flex-col">
-                <div className="text-lg text-[#555] ">
+                <div className="text-[#555] ">
                   <h2>Samyak Infotech</h2>
                 </div>
                 <div>
-                  <p className="text-[#333] text-xl">Frontend Developer</p>
-                  <p className="text-[#777] text-sm">Mar 2024 - Nov 2024</p>
+                  <p className="text-[#333] text-lg">Frontend Developer</p>
+                  <p className="text-[#777] text-sm font-medium">
+                    Oct 2024 - Jan 2024 (3 m) • Internship • On-site
+                  </p>
                 </div>
               </div>
             </div>
@@ -111,12 +113,14 @@ export default function Home() {
               </div>
               {/* Education Details */}
               <div className="flex flex-col">
-                <div className="text-lg text-[#555] ">
-                  <h2>Samyak Infotech</h2>
+                <div className="text-[#555] ">
+                  <h2>Maa Vaishno Interiors</h2>
                 </div>
                 <div>
-                  <p className="text-[#333] text-xl">Frontend Developer</p>
-                  <p className="text-[#777] text-sm">Mar 2024 - Nov 2024</p>
+                  <p className="text-[#333] text-lg">Fullstack Developer</p>
+                  <p className="text-[#777] text-sm font-medium">
+                    Mar 2024 - Sept 2024 (6 m) • Internship • Remote
+                  </p>
                 </div>
               </div>
             </div>

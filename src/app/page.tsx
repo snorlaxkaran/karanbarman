@@ -257,6 +257,12 @@ export default function Home() {
         </div>
         <div className="border-b border-x border-neutral-300/80 py-10">
           {/* TODO: GitHub */}
+          <div className="flex mx-auto px-4 py-2">
+            <img
+              src="https://ghchart.rshah.org/snorlaxkaran"
+              alt="GitHub Contributions"
+            />
+          </div>
         </div>
       </div>
     </MaxWidthWrapper>

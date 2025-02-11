@@ -35,9 +35,19 @@ export const skills = [
     image: "postgresql",
   },
   {
+    name: "Supabase",
+    value: "supabase",
+    image: "supabase",
+  },
+  {
     name: "AWS",
     value: "aws",
     image: "aws",
+  },
+  {
+    name: "DigitalOcean",
+    value: "digitalocean",
+    image: "digitalocean",
   },
   {
     name: "Jenkins",

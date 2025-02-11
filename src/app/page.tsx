@@ -3,6 +3,7 @@ import { Mail } from "lucide-react";
 import Image from "next/image";
 import { skills } from "@/data/skills";
 import Link from "next/link";
+import ProjectsSvg from "@/data/projects";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       <div className="flex flex-col gap-0">
         <div className="border-b border-x border-neutral-300/80 py-10">
           {/* TODO: Summary about Karan Barman */}
-          <div className="flex flex-col gap-6 p-2">
+          <div className="flex flex-col gap-6  py-2 px-4">
             <div className="">
               <Image
                 src="/karan.png"
@@ -67,7 +68,7 @@ export default function Home() {
         </div>
         <div className="border-b border-x border-neutral-300/80 py-10">
           {/* TODO: Experience */}
-          <div className="flex flex-col gap-6 p-2">
+          <div className="flex flex-col gap-6  py-2 px-4">
             <div>
               <h1 className="text-2xl font-medium">Experience</h1>
             </div>
@@ -75,7 +76,7 @@ export default function Home() {
         </div>
         <div className="border-b border-x border-neutral-300/80 py-10">
           {/* Education Section */}
-          <div className="flex flex-col gap-6 p-2">
+          <div className="flex flex-col gap-6 py-2 px-4">
             <div>
               <h1 className="text-2xl font-medium">Education</h1>
             </div>
@@ -129,6 +130,17 @@ export default function Home() {
         </div>
         <div className="border-b border-x border-neutral-300/80 py-10">
           {/* TODO: Projects */}
+
+          <div className="flex flex-col gap-6 py-2 px-4">
+            <div className="flex items-center gap-2 text-lg sm:text-xl">
+              <ProjectsSvg />
+              <h1 className="text-2xl font-medium">Projects</h1>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-red-600">hello</div>
+              <div className="bg-red-600">hello</div>
+            </div>
+          </div>
         </div>
         <div className="border-b border-x border-neutral-300/80 py-10">
           {/* TODO: GitHub */}

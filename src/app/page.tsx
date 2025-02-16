@@ -4,9 +4,9 @@ import Image from "next/image";
 import { skills } from "@/data/skills";
 import Link from "next/link";
 import ProjectsSvg from "@/data/projects";
+import Check from "@/data/icons/check";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import Check from "@/data/icons/check";
 
 export default function Home() {
   return (
@@ -75,7 +75,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="border-b border-x border-neutral-300/80 py-10">
+        <div className="border-b border-x border-neutral-300/80 py-10 hidden">
           {/* TODO: Experience */}
           <div className="flex flex-col gap-6  py-2 px-4">
             <div>
@@ -201,7 +201,7 @@ export default function Home() {
               <Card>
                 <div className=" relative w-full aspect-video">
                   <Image
-                    src={"/nextjs.png"}
+                    src={"/"}
                     alt="project"
                     width={100}
                     height={100}
@@ -217,53 +217,35 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col space-y-1.5 p-6 px-2 py-2 overflow-hidden">
                   <h3 className="tracking-tight text-base sm:text-lg font-medium flex items-center justify-between gap-x-2">
-                    <span>Slugy</span>
+                    <span>Google docs</span>
                   </h3>
                   <div className="text-xs flex items-center justify-between">
-                    <p>Oct 2024 - Present</p>
+                    <p>01 Feb - Present</p>
                   </div>
                 </div>
                 <p className="px-2 overflow-hidden text-xs text-gray-500 dark:text-gray-300">
-                  Slugy is an open-source SaaS tool for fast, secure, and easy
-                  link management, tracking and organization for individuals and
-                  businesses.
+                  Google docs
                 </p>
                 <div className="p-2 pt-3 overflow-hidden flex items-center flex-wrap gap-1">
-                  <Button size={"sm"} variant={"outline"}>
-                    Next.js
-                  </Button>
-                  <Button size={"sm"} variant={"outline"}>
-                    TypeScript
-                  </Button>
-                  <Button size={"sm"} variant={"outline"}>
-                    Prisma
-                  </Button>
-                  <Button size={"sm"} variant={"outline"}>
-                    PostgreSQL
-                  </Button>
-                  <Button size={"sm"} variant={"outline"}>
-                    AWS
-                  </Button>
+                  {skills.map((skill, i) => (
+                    <Button key={i} size={"sm"} variant={"outline"}>
+                      {skill.name}
+                    </Button>
+                  ))}
                 </div>
                 <div className="p-6 pt-0 flex items-center gap-2 px-2 pb-2 overflow-hidden">
-                  <Button size={"sm"}>
-                    <Globe />
-                    Webiste
-                  </Button>
+                  <Link href={"https://docs-psi-pied.vercel.app"}>
+                    <Button size={"sm"}>
+                      <Globe />
+                      Website
+                    </Button>
+                  </Link>
                 </div>
               </Card>
             </div>
           </div>
         </div>
-        <div className="border-b border-x border-neutral-300/80 py-10">
-          {/* TODO: GitHub */}
-          <div className="flex mx-auto px-4 py-2">
-            <img
-              src="https://ghchart.rshah.org/snorlaxkaran"
-              alt="GitHub Contributions"
-            />
-          </div>
-        </div>
+        {/* TODO: GitHub */}
       </div>
     </MaxWidthWrapper>
   );

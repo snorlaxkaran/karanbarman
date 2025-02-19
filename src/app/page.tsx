@@ -30,7 +30,7 @@ export default function Home() {
                 <h1 className="text-3xl font-bold">Hi, I&apos;m Karan</h1>
                 <Link
                   href={"https://www.youtube.com/@codewithkaran17"}
-                  className="flex items-center gap-x-1 text-blue-600"
+                  className="flex items-center gap-x-1 text-blue-600 underline"
                 >
                   <Image
                     src={"/svgs/youtube1.svg"}
@@ -204,7 +204,7 @@ export default function Home() {
               <Card>
                 <div className="flex items-center justify-center w-full aspect-video">
                   <Image
-                    src={"/image3.png"}
+                    src={"/Udemy.jpg"}
                     alt="project"
                     width={100}
                     className="bg-cover w-full"
@@ -220,7 +220,7 @@ export default function Home() {
                     <p>10 Feb - Present</p>
                   </div>
                 </div>
-                <p className="px-2 overflow-hidden text-xs text-gray-500 dark:text-gray-300">
+                <p className="px-2 overflow-hidden text-sm text-gray-500 dark:text-gray-300">
                   Google docs
                 </p>
                 <div className="p-2 pt-3 overflow-hidden flex items-center flex-wrap gap-1">
@@ -242,7 +242,7 @@ export default function Home() {
               <Card>
                 <div className="flex items-center justify-center w-full aspect-video">
                   <Image
-                    src={"/image2.png"}
+                    src={"/google.png"}
                     alt="project"
                     width={100}
                     className="bg-cover w-full"
@@ -258,7 +258,7 @@ export default function Home() {
                     <p>01 Feb - Present</p>
                   </div>
                 </div>
-                <p className="px-2 overflow-hidden text-xs text-gray-500 dark:text-gray-300">
+                <p className="px-2 overflow-hidden text-sm text-gray-500 dark:text-gray-300">
                   Google docs
                 </p>
                 <div className="p-2 pt-3 overflow-hidden flex items-center flex-wrap gap-1">
@@ -296,7 +296,7 @@ export default function Home() {
                     <p>10 Feb - Present</p>
                   </div>
                 </div>
-                <p className="px-2 overflow-hidden text-xs text-gray-500 dark:text-gray-300">
+                <p className="px-2 overflow-hidden text-sm text-gray-500 dark:text-gray-300">
                   Maa vaishno interiors a railing and staircase designing &
                   maintaining company in jaipur
                 </p>

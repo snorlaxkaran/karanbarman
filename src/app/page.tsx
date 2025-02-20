@@ -5,7 +5,12 @@ import { skills } from "@/data/skills";
 import Link from "next/link";
 import ProjectsSvg from "@/data/projects";
 import Check from "@/data/icons/check";
-import { Card } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -201,120 +206,95 @@ export default function Home() {
               <h1 className="text-2xl font-medium">Projects</h1>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <Card>
-                <div className="flex items-center justify-center w-full aspect-video">
-                  <Image
-                    src={"/Udemy.jpg"}
-                    alt="project"
-                    width={100}
-                    className="bg-cover w-full"
-                    height={100}
-                    unoptimized
-                  />
-                </div>
-                <div className="flex flex-col space-y-1 p-6 px-2 py-2 overflow-hidden">
-                  <h3 className="tracking-tight text-base sm:text-lg font-medium flex items-center justify-between gap-x-2">
-                    <span>Udemy clone</span>
-                  </h3>
-                  <div className="text-sm flex items-center justify-between">
-                    <p>10 Feb - Present</p>
-                  </div>
-                </div>
-                <p className="px-2 overflow-hidden text-sm text-gray-500 dark:text-gray-300">
-                  Google docs
-                </p>
-                <div className="p-2 pt-3 overflow-hidden flex items-center flex-wrap gap-1">
-                  {skills.map((skill, i) => (
-                    <Button key={i} size={"sm"} variant={"outline"}>
-                      {skill.name}
-                    </Button>
-                  ))}
-                </div>
-                <div className="p-6 pt-0 flex items-center gap-2 px-2 pb-2 overflow-hidden">
-                  <Link href={"https://docs-psi-pied.vercel.app"}>
+              <Card className="relative">
+                <Image
+                  src={"/Udemy.jpg"}
+                  alt="kok"
+                  width={100}
+                  height={100}
+                  className="w-full"
+                  unoptimized
+                />
+                <CardContent className="flex flex-col space-y-3 mt-6">
+                  <CardTitle className="font-medium">Udemy clone</CardTitle>
+                  <CardDescription className="flex flex-col space-y-3">
+                    <p className="">15 Feb - Present</p>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div className="flex gap-1 flex-wrap">
+                      {skills.map((skill) => (
+                        <Button
+                          key={skill.value}
+                          variant={"outline"}
+                          size={"sm"}
+                          className="flex items-center"
+                        >
+                          <Image
+                            src={`/svgs/${skill.image}.svg`}
+                            alt={skill.name}
+                            width={100}
+                            height={100}
+                            className="w-4 h-4"
+                          />
+                          {skill.name}
+                        </Button>
+                      ))}
+                    </div>
+                  </CardDescription>
+                  <div>
                     <Button size={"sm"}>
                       <Globe />
                       Website
                     </Button>
-                  </Link>
-                </div>
+                  </div>
+                </CardContent>
               </Card>
-              <Card>
-                <div className="flex items-center justify-center w-full aspect-video">
-                  <Image
-                    src={"/google.png"}
-                    alt="project"
-                    width={100}
-                    className="bg-cover w-full"
-                    height={100}
-                    unoptimized
-                  />
-                </div>
-                <div className="flex flex-col space-y-1 p-6 px-2 py-2 overflow-hidden">
-                  <h3 className="tracking-tight text-base sm:text-lg font-medium flex items-center justify-between gap-x-2">
-                    <span>Google docs</span>
-                  </h3>
-                  <div className="text-sm flex items-center justify-between">
-                    <p>01 Feb - Present</p>
-                  </div>
-                </div>
-                <p className="px-2 overflow-hidden text-sm text-gray-500 dark:text-gray-300">
-                  Google docs
-                </p>
-                <div className="p-2 pt-3 overflow-hidden flex items-center flex-wrap gap-1">
-                  {skills.map((skill, i) => (
-                    <Button key={i} size={"sm"} variant={"outline"}>
-                      {skill.name}
-                    </Button>
-                  ))}
-                </div>
-                <div className="p-6 pt-0 flex items-center gap-2 px-2 pb-2 overflow-hidden">
-                  <Link href={"https://docs-psi-pied.vercel.app"}>
+              <Card className="relative">
+                <Image
+                  src={"/google.png"}
+                  alt="kok"
+                  width={100}
+                  height={100}
+                  className="w-full"
+                  unoptimized
+                />
+                <CardContent className="flex flex-col space-y-3 mt-6">
+                  <CardTitle className="font-medium">
+                    Google docs - Word docs
+                  </CardTitle>
+                  <CardDescription className="flex flex-col space-y-3">
+                    <p className="">10 Feb - Present</p>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div className="flex gap-1 flex-wrap">
+                      {skills.map((skill) => (
+                        <Button
+                          key={skill.value}
+                          variant={"outline"}
+                          size={"sm"}
+                          className="flex items-center"
+                        >
+                          <Image
+                            src={`/svgs/${skill.image}.svg`}
+                            alt={skill.name}
+                            width={100}
+                            height={100}
+                            className="w-4 h-4"
+                          />
+                          {skill.name}
+                        </Button>
+                      ))}
+                    </div>
+                  </CardDescription>
+                  <div>
                     <Button size={"sm"}>
                       <Globe />
                       Website
                     </Button>
-                  </Link>
-                </div>
-              </Card>
-              <Card>
-                <div className="flex items-center justify-center w-full aspect-video">
-                  <Image
-                    src={"/image.png"}
-                    alt="project"
-                    width={100}
-                    className="bg-cover w-full"
-                    height={100}
-                    unoptimized
-                  />
-                </div>
-                <div className="flex flex-col space-y-1 p-6 px-2 py-2 overflow-hidden">
-                  <h3 className="tracking-tight text-base sm:text-lg font-medium flex items-center justify-between gap-x-2">
-                    <span>Vaishno interiors - client</span>
-                  </h3>
-                  <div className="text-sm flex items-center justify-between">
-                    <p>10 Feb - Present</p>
                   </div>
-                </div>
-                <p className="px-2 overflow-hidden text-sm text-gray-500 dark:text-gray-300">
-                  Maa vaishno interiors a railing and staircase designing &
-                  maintaining company in jaipur
-                </p>
-                <div className="p-2 pt-3 overflow-hidden flex items-center flex-wrap gap-1">
-                  {skills.map((skill, i) => (
-                    <Button key={i} size={"sm"} variant={"outline"}>
-                      {skill.name}
-                    </Button>
-                  ))}
-                </div>
-                <div className="p-6 pt-0 flex items-center gap-2 px-2 pb-2 overflow-hidden">
-                  <Link href={"https://maa-vaishno-interiors.vercel.app/"}>
-                    <Button size={"sm"}>
-                      <Globe />
-                      Website
-                    </Button>
-                  </Link>
-                </div>
+                </CardContent>
               </Card>
             </div>
           </div>

@@ -12,6 +12,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
@@ -75,7 +76,10 @@ export default function Home() {
                     alt={skill.name}
                     width={100}
                     height={100}
-                    className="size-3"
+                    className={cn(
+                      "size-3",
+                      skill.value === "react" && "animate-spin-slow"
+                    )}
                   />
                   {skill.name}
                 </div>
@@ -235,7 +239,10 @@ export default function Home() {
                             alt={skill.name}
                             width={100}
                             height={100}
-                            className="w-4 h-4"
+                            className={cn(
+                              "w-4 h-4",
+                              skill.value === "react" && "animate-spin-slow"
+                            )}
                           />
                           {skill.name}
                         </Button>
@@ -281,7 +288,10 @@ export default function Home() {
                             alt={skill.name}
                             width={100}
                             height={100}
-                            className="w-4 h-4"
+                            className={cn(
+                              "w-4 h-4",
+                              skill.value === "react" && "animate-spin-slow"
+                            )}
                           />
                           {skill.name}
                         </Button>

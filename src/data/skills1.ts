@@ -1,4 +1,4 @@
-export const skills = [
+export const skills1 = [
   {
     name: "React.js",
     value: "react",
@@ -23,26 +23,6 @@ export const skills = [
     name: "JavaScript",
     value: "javascript",
     image: "javascript",
-  },
-  {
-    name: "MongoDB",
-    value: "mongodb",
-    image: "mongodb",
-  },
-  {
-    name: "MySQL",
-    value: "mysql",
-    image: "mysql",
-  },
-  {
-    name: "PostgreSQL",
-    value: "postgresql",
-    image: "postgresql",
-  },
-  {
-    name: "Supabase",
-    value: "supabase",
-    image: "supabase",
   },
   {
     name: "Neon",

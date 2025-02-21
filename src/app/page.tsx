@@ -13,6 +13,8 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { skills1 } from "@/data/skills1";
+import { skills2 } from "@/data/skills2";
 
 export default function Home() {
   return (
@@ -36,7 +38,7 @@ export default function Home() {
                 alt="Karan's Photo"
                 width={100}
                 height={100}
-                className="rounded-full aspect-square bg-cover object-cover shadow-sm border border-neutral-500 border-2"
+                className="rounded-full aspect-square bg-cover object-cover shadow-sm border-neutral-500 border-2"
                 unoptimized
               />
             </div>
@@ -236,12 +238,12 @@ export default function Home() {
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
                     <div className="flex gap-1 flex-wrap">
-                      {skills.map((skill) => (
+                      {skills1.map((skill) => (
                         <Button
                           key={skill.value}
                           variant={"outline"}
                           size={"sm"}
-                          className="flex items-center"
+                          className="flex items-center text-black"
                         >
                           <Image
                             src={`/svgs/${skill.image}.svg`}
@@ -285,12 +287,12 @@ export default function Home() {
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
                     <div className="flex gap-1 flex-wrap">
-                      {skills.map((skill) => (
+                      {skills2.map((skill) => (
                         <Button
                           key={skill.value}
                           variant={"outline"}
                           size={"sm"}
-                          className="flex items-center"
+                          className="flex items-center text-black"
                         >
                           <Image
                             src={`/svgs/${skill.image}.svg`}

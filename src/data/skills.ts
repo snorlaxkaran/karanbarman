@@ -39,4 +39,9 @@ export const skills = [
     value: "prisma",
     image: "prisma",
   },
+  {
+    name: "Docker",
+    value: "docker",
+    image: "docker",
+  },
 ];

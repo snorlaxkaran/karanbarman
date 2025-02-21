@@ -23,11 +23,11 @@ export default function Home() {
           <div className="flex flex-col gap-6  py-2 px-4">
             <div className="">
               <Image
-                src="/karan.png"
+                src="/pro1.jpg"
                 alt="Karan's Photo"
                 width={100}
                 height={100}
-                className="rounded-full"
+                className="rounded-full aspect-square bg-cover object-cover"
                 unoptimized
               />
             </div>

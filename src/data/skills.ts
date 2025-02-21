@@ -30,6 +30,16 @@ export const skills = [
     image: "mongodb",
   },
   {
+    name: "MySQL",
+    value: "mysql",
+    image: "mysql",
+  },
+  {
+    name: "PostgreSQL",
+    value: "postgresql",
+    image: "postgresql",
+  },
+  {
     name: "Supabase",
     value: "supabase",
     image: "supabase",

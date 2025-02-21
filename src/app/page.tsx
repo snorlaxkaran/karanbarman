@@ -18,8 +18,17 @@ export default function Home() {
   return (
     <MaxWidthWrapper className="">
       <div className="flex flex-col gap-0">
-        <div className="border-b border-x border-neutral-300/80 py-10">
+        <div className="border-b border-x border-neutral-300/80 py-10 relative">
           {/* TODO: Summary about Karan Barman */}
+          <Image
+            src={"/koko.png"}
+            width={100}
+            height={100}
+            alt="image"
+            unoptimized
+            className="absolute inset-0 -z-10 h-1/4 w-full object-cover object-center"
+          />
+
           <div className="flex flex-col gap-6  py-2 px-4">
             <div className="">
               <Image
@@ -27,7 +36,7 @@ export default function Home() {
                 alt="Karan's Photo"
                 width={100}
                 height={100}
-                className="rounded-full aspect-square bg-cover object-cover"
+                className="rounded-full aspect-square bg-cover object-cover shadow-sm border border-neutral-500 border-2"
                 unoptimized
               />
             </div>

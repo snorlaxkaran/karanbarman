@@ -30,6 +30,11 @@ export const technologies = [
     image: "clerk",
   },
   {
+    name: "Uploadthing",
+    value: "uploadthing",
+    image: "uploadthing",
+  },
+  {
     name: "Tailwindcss",
     value: "tailwind",
     image: "tailwind",

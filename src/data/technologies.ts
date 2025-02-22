@@ -29,4 +29,9 @@ export const technologies = [
     value: "clerk",
     image: "clerk",
   },
+  {
+    name: "Tailwindcss",
+    value: "tailwind",
+    image: "tailwind",
+  },
 ];

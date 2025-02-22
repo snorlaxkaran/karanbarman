@@ -1,10 +1,12 @@
 import MaxWidthWrapper from "@/components/shared/maxWidthWrapper";
 import { Globe, Mail } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import { skills } from "@/data/skills";
 import Link from "next/link";
 import ProjectsSvg from "@/data/projects";
 import Check from "@/data/icons/check";
+import GitHubCalendar from "react-github-calendar";
 import {
   Card,
   CardContent,
@@ -15,6 +17,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { skills1 } from "@/data/skills1";
 import { skills2 } from "@/data/skills2";
+import { technologies } from "@/data/technologies";
 
 export default function Home() {
   return (
@@ -321,6 +324,60 @@ export default function Home() {
           </div>
         </div>
         {/* TODO: GitHub */}
+        <div className="border-b border-x border-neutral-300/80 py-10">
+          <div className="flex flex-col gap-6 py-2 px-4">
+            <div className="flex items-center gap-2 text-lg sm:text-xl">
+              <h1 className="text-2xl font-medium">
+                Technologies I&apos;ve Worked With
+              </h1>
+            </div>
+            <div className="flex gap-3">
+              {technologies.map((tech) => (
+                <div
+                  key={tech.value}
+                  className="py-1 px-2 border border-neutral-500/80 rounded-full text-sm flex gap-1 items-center"
+                >
+                  <Image
+                    src={`/svgs/${tech.image}.svg`}
+                    alt={tech.name}
+                    width={100}
+                    height={100}
+                    className={cn(
+                      "size-3",
+                      tech.value === "react" && "animate-spin-slow"
+                    )}
+                  />
+                  {tech.name}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="border-b border-x border-neutral-300/80 py-10">
+          <div className="p-6">
+            <div className="flex items-center mb-7 gap-2">
+              <FaGithub className="h-7 w-7" />
+              <p className="text-xl font-medium poppins-light">GitHub</p>
+            </div>
+            <GitHubCalendar
+              colorScheme="light"
+              fontSize={14}
+              username="snorlaxkaran"
+            />
+          </div>
+          <div className="flex flex-col items-center justify-center min-h-[200px] gap-6 max-w-lg mx-auto text-center">
+            <p className="poppins-medium text-3xl">Get in Touch</p>
+            <p className="text-[16px] text-muted-foreground">
+              Want to chat? Just shoot me a DM with a direct question on{" "}
+              <Link href={"https://x.com/snorlax_karan"}>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 p-2">
+                  Twitter
+                </span>
+              </Link>
+              and I&apos;ll respond.
+            </p>
+          </div>
+        </div>
       </div>
     </MaxWidthWrapper>
   );

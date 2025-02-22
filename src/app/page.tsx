@@ -6,7 +6,6 @@ import { skills } from "@/data/skills";
 import Link from "next/link";
 import ProjectsSvg from "@/data/projects";
 import Check from "@/data/icons/check";
-import GitHubCalendar from "react-github-calendar";
 import {
   Card,
   CardContent,
@@ -19,6 +18,7 @@ import { skills1 } from "@/data/skills1";
 import { skills2 } from "@/data/skills2";
 import { technologies } from "@/data/technologies";
 import "./globals.css";
+import MyGitHubActivity from "@/components/mygitactivity";
 
 export default function Home() {
   return (
@@ -360,11 +360,7 @@ export default function Home() {
               <FaGithub className="h-7 w-7" />
               <p className="text-xl font-medium">GitHub</p>
             </div>
-            <GitHubCalendar
-              colorScheme="light"
-              fontSize={14}
-              username="snorlaxkaran"
-            />
+            <MyGitHubActivity />
           </div>
           <div className="flex flex-col items-center justify-center min-h-[200px] gap-6 max-w-lg mx-auto text-center p-6">
             <p className="text-3xl">Get in Touch</p>

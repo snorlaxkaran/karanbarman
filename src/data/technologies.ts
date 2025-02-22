@@ -39,4 +39,9 @@ export const technologies = [
     value: "tailwind",
     image: "tailwind",
   },
+  {
+    name: "Stripe",
+    value: "stripe",
+    image: "stripe",
+  },
 ];

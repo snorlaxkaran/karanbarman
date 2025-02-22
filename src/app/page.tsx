@@ -18,6 +18,7 @@ import { cn } from "@/lib/utils";
 import { skills1 } from "@/data/skills1";
 import { skills2 } from "@/data/skills2";
 import { technologies } from "@/data/technologies";
+import "./globals.css";
 
 export default function Home() {
   return (
@@ -331,7 +332,7 @@ export default function Home() {
                 Technologies I&apos;ve Worked With
               </h1>
             </div>
-            <div className="flex gap-3">
+            <div className="flex gap-3 flex-wrap">
               {technologies.map((tech) => (
                 <div
                   key={tech.value}
@@ -365,8 +366,8 @@ export default function Home() {
               username="snorlaxkaran"
             />
           </div>
-          <div className="flex flex-col items-center justify-center min-h-[200px] gap-6 max-w-lg mx-auto text-center">
-            <p className="poppins-medium text-3xl">Get in Touch</p>
+          <div className="flex flex-col items-center justify-center min-h-[200px] gap-6 max-w-lg mx-auto text-center p-6">
+            <p className="font-poppins text-3xl">Get in Touch</p>
             <p className="text-[16px] text-muted-foreground">
               Want to chat? Just shoot me a DM with a direct question on{" "}
               <Link href={"https://x.com/snorlax_karan"}>

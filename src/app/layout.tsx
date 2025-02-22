@@ -13,12 +13,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const poppins = localFont({
-  src: "/fonts/Poppins-Black.ttf",
-  variable: "--poppins",
-  weight: "300",
-});
-
 export const metadata: Metadata = {
   title: "Karan Barman",
   description:

@@ -358,7 +358,7 @@ export default function Home() {
           <div className="p-6">
             <div className="flex items-center mb-7 gap-2">
               <FaGithub className="h-7 w-7" />
-              <p className="text-xl font-medium poppins-light">GitHub</p>
+              <p className="text-xl font-medium">GitHub</p>
             </div>
             <GitHubCalendar
               colorScheme="light"
@@ -367,13 +367,14 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-col items-center justify-center min-h-[200px] gap-6 max-w-lg mx-auto text-center p-6">
-            <p className="font-poppins text-3xl">Get in Touch</p>
+            <p className="text-3xl">Get in Touch</p>
             <p className="text-[16px] text-muted-foreground">
               Want to chat? Just shoot me a DM with a direct question on{" "}
-              <Link href={"https://x.com/snorlax_karan"}>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 p-2">
-                  Twitter
-                </span>
+              <Link
+                href={"https://x.com/snorlax_karan"}
+                className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 p-2"
+              >
+                Twitter
               </Link>
               and I&apos;ll respond.
             </p>

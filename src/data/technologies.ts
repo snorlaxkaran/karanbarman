@@ -44,4 +44,9 @@ export const technologies = [
     value: "stripe",
     image: "stripe",
   },
+  {
+    name: "JSON Web Token",
+    value: "jwt",
+    image: "jwt",
+  },
 ];

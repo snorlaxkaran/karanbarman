@@ -227,7 +227,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Card className="relative">
                 <Image
-                  src={"/Udemy.jpg"}
+                  src={"/udemy-1.png"}
                   alt="kok"
                   width={100}
                   height={100}
@@ -265,10 +265,12 @@ export default function Home() {
                     </div>
                   </CardDescription>
                   <div>
-                    <Button size={"sm"}>
-                      <Globe />
-                      Website
-                    </Button>
+                    <Link href={"https://udemy-lms-clone.vercel.app/"}>
+                      <Button size={"sm"}>
+                        <Globe />
+                        Website
+                      </Button>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>
@@ -336,7 +338,7 @@ export default function Home() {
               {technologies.map((tech) => (
                 <div
                   key={tech.value}
-                  className="py-1 px-2 border border-neutral-500/80 rounded-full text-sm flex gap-1 items-center"
+                  className="py-1 px-2 border border-neutral-500/80 rounded-full text-sm flex gap-1 items-center text-slate-700"
                 >
                   <Image
                     src={`/svgs/${tech.image}.svg`}

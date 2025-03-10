@@ -149,7 +149,7 @@ export default function Home() {
               {/* Education Details */}
               <div className="flex flex-col">
                 <div className=" flex gap-1 items-center">
-                  <h2 className="text-[#555]">Maa Vaishno Interiors</h2>
+                  <h2 className="text-[#555]">Grocient</h2>
                   <Check />
                 </div>
                 <div>

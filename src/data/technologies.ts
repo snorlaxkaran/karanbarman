@@ -49,4 +49,9 @@ export const technologies = [
     value: "jwt",
     image: "jwt",
   },
+  {
+    name: "Postman",
+    value: "postman",
+    image: "postman",
+  },
 ];

@@ -10,24 +10,8 @@ const MyGitHubActivity = async () => {
       <GitHubCalendar
         username="snorlaxkaran"
         colorScheme="light"
-        blockSize={10}
+        blockSize={12}
         blockRadius={50}
-        transformData={(contributions) => {
-          const currentYear = new Date().getFullYear();
-          const currentMonth = new Date().getMonth();
-          const shownMonths = 6;
-
-          return contributions.filter((activity) => {
-            const date = new Date(activity.date);
-            const monthOfDay = date.getMonth();
-
-            return (
-              date.getFullYear() === currentYear &&
-              monthOfDay > currentMonth - shownMonths &&
-              monthOfDay <= currentMonth
-            );
-          });
-        }}
         hideColorLegend
         labels={{
           totalCount: "{{count}} contributions in the last half year",

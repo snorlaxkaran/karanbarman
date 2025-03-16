@@ -54,4 +54,14 @@ export const technologies = [
     value: "postman",
     image: "postman",
   },
+  {
+    name: "Recoil",
+    value: "recoil",
+    image: "recoil",
+  },
+  {
+    name: "Aiven",
+    value: "aiven",
+    image: "aiven",
+  },
 ];

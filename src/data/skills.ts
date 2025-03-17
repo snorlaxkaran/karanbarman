@@ -45,9 +45,14 @@ export const skills = [
     image: "prisma",
   },
   {
-    name: "Zod",
-    value: "zod",
-    image: "zod",
+    name: "Hono",
+    value: "hono",
+    image: "hono",
+  },
+  {
+    name: "Express",
+    value: "express",
+    image: "express",
   },
   {
     name: "Docker",

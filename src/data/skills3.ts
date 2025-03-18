@@ -1,13 +1,8 @@
-export const skills1 = [
+export const skills3 = [
   {
     name: "React.js",
     value: "react",
     image: "react",
-  },
-  {
-    name: "Next.js",
-    value: "next",
-    image: "next",
   },
   {
     name: "TypeScript",
@@ -20,14 +15,19 @@ export const skills1 = [
     image: "node",
   },
   {
+    name: "Hono",
+    value: "hono",
+    image: "hono",
+  },
+  {
+    name: "Aiven",
+    value: "aiven",
+    image: "aiven",
+  },
+  {
     name: "JavaScript",
     value: "javascript",
     image: "javascript",
-  },
-  {
-    name: "Neon",
-    value: "neon",
-    image: "neon",
   },
   {
     name: "Prisma",
@@ -35,13 +35,8 @@ export const skills1 = [
     image: "prisma",
   },
   {
-    name: "Mux Video",
-    value: "mux",
-    image: "mux",
-  },
-  {
-    name: "Uploadthing",
-    value: "uploadthing",
-    image: "uploadthing",
+    name: "Cloudfare",
+    value: "cloudfare",
+    image: "cloudfare",
   },
 ];

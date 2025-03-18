@@ -19,6 +19,7 @@ import { skills2 } from "@/data/skills2";
 import { technologies } from "@/data/technologies";
 import "./globals.css";
 import MyGitHubActivity from "@/components/mygitactivity";
+import { skills3 } from "@/data/skills3";
 
 export default function Home() {
   return (
@@ -227,6 +228,70 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Card className="relative">
                 <Image
+                  src={"/image.png"}
+                  alt="kok"
+                  width={100}
+                  height={100}
+                  className="w-full"
+                  unoptimized
+                />
+                <CardContent className="flex flex-col space-y-3 mt-6">
+                  <CardTitle className="font-medium">Medium Blog</CardTitle>
+                  <CardDescription className="flex flex-col space-y-3">
+                    <p className="">16 Mar - 18 Mar</p>
+                    <p className="text-sm">
+                      Hello, I was just learning about Hono and Cloudflare, so I
+                      thought of making a blog website.
+                    </p>
+                    <div className="flex gap-1 flex-wrap">
+                      {skills3.map((skill) => (
+                        <Button
+                          key={skill.value}
+                          variant={"outline"}
+                          size={"sm"}
+                          className="flex items-center text-black"
+                        >
+                          <Image
+                            src={`/svgs/${skill.image}.svg`}
+                            alt={skill.name}
+                            width={100}
+                            height={100}
+                            className={cn(
+                              "w-4 h-4",
+                              skill.value === "react" && "animate-spin-slow"
+                            )}
+                          />
+                          {skill.name}
+                        </Button>
+                      ))}
+                    </div>
+                  </CardDescription>
+                  <div className="flex items-center gap-2">
+                    <Link href={"https://medium-blog-dum8.vercel.app/signup"}>
+                      <Button size={"sm"}>
+                        <Globe />
+                        Website
+                      </Button>
+                    </Link>
+                    <Link
+                      href={"https://youtu.be/aHvaKUSh89w?si=P4roEHZoJZ_NvdzI"}
+                    >
+                      <Button size={"sm"} variant={"outline"}>
+                        <Image
+                          src={"/svgs/youtube1.svg"}
+                          width={100}
+                          height={100}
+                          alt="youtbe"
+                          className="w-5 h-5"
+                        />
+                        Watch me build this website
+                      </Button>
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="relative">
+                <Image
                   src={"/udemy-1.png"}
                   alt="kok"
                   width={100}
@@ -237,9 +302,10 @@ export default function Home() {
                 <CardContent className="flex flex-col space-y-3 mt-6">
                   <CardTitle className="font-medium">Udemy clone</CardTitle>
                   <CardDescription className="flex flex-col space-y-3">
-                    <p className="">15 Feb - Present</p>
+                    <p className="">15 Feb - 01 Mar</p>
                     <p className="text-sm">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Hello, I was just learning about Next.js and Prisma, so I
+                      thought of making an LMS website.
                     </p>
                     <div className="flex gap-1 flex-wrap">
                       {skills1.map((skill) => (

@@ -59,4 +59,9 @@ export const skills = [
     value: "docker",
     image: "docker",
   },
+  {
+    name: "Cloudfare",
+    value: "cloudfare",
+    image: "cloudfare",
+  },
 ];

@@ -64,4 +64,9 @@ export const skills = [
     value: "cloudfare",
     image: "cloudfare",
   },
+  {
+    name: "Google Cloud",
+    value: "gcp",
+    image: "gcp",
+  },
 ];

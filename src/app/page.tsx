@@ -228,6 +228,58 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Card className="relative">
                 <Image
+                  src={"/download.png"}
+                  alt="kok"
+                  width={100}
+                  height={100}
+                  className="w-full"
+                  unoptimized
+                />
+                <CardContent className="flex flex-col space-y-3 mt-6">
+                  <CardTitle className="font-medium">
+                    YouTube - Building...
+                  </CardTitle>
+                  <CardDescription className="flex flex-col space-y-3">
+                    <p className="">20 Mar - Present</p>
+                    <p className="text-sm">
+                      Hello, I was just learning about Drizzle and Google Cloud,
+                      so I thought of making a blog website.
+                    </p>
+                    <div className="flex gap-1 flex-wrap">
+                      {skills1.map((skill) => (
+                        <Button
+                          key={skill.value}
+                          variant={"outline"}
+                          size={"sm"}
+                          className="flex items-center text-black"
+                        >
+                          <Image
+                            src={`/svgs/${skill.image}.svg`}
+                            alt={skill.name}
+                            width={100}
+                            height={100}
+                            className={cn(
+                              "w-4 h-4",
+                              skill.value === "react" && "animate-spin-slow"
+                            )}
+                          />
+                          {skill.name}
+                        </Button>
+                      ))}
+                    </div>
+                  </CardDescription>
+                  <div className="flex items-center gap-2">
+                    <Link href={"https://youtube-tau-three.vercel.app/"}>
+                      <Button size={"sm"}>
+                        <Globe />
+                        Website
+                      </Button>
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="relative">
+                <Image
                   src={"/image.png"}
                   alt="kok"
                   width={100}

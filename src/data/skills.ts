@@ -45,6 +45,11 @@ export const skills = [
     image: "prisma",
   },
   {
+    name: "Drizzle",
+    value: "drizzle",
+    image: "drizzle",
+  },
+  {
     name: "Hono",
     value: "hono",
     image: "hono",
@@ -64,7 +69,6 @@ export const skills = [
     value: "cloudfare",
     image: "cloudfare",
   },
-
   {
     name: "Google Cloud",
     value: "gcp",

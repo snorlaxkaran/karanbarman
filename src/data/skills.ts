@@ -65,6 +65,11 @@ export const skills = [
     image: "cloudfare",
   },
   {
+    name: "AWS",
+    value: "aws",
+    image: "aws",
+  },
+  {
     name: "Google Cloud",
     value: "gcp",
     image: "gcp",

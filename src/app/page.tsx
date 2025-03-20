@@ -1,25 +1,19 @@
 import MaxWidthWrapper from "@/components/shared/maxWidthWrapper";
-import { Globe, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import { skills } from "@/data/skills";
 import Link from "next/link";
 import ProjectsSvg from "@/data/projects";
 import Check from "@/data/icons/check";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardTitle,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+
 import { cn } from "@/lib/utils";
 import { skills1 } from "@/data/skills1";
-import { skills2 } from "@/data/skills2";
 import { technologies } from "@/data/technologies";
 import "./globals.css";
 import MyGitHubActivity from "@/components/mygitactivity";
 import { skills3 } from "@/data/skills3";
+import CardTemp from "@/components/shared/card";
 
 export default function Home() {
   return (
@@ -225,222 +219,31 @@ export default function Home() {
               <ProjectsSvg />
               <h1 className="text-2xl font-medium">Projects</h1>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <Card className="relative">
-                <Image
-                  src={"/download.png"}
-                  alt="kok"
-                  width={100}
-                  height={100}
-                  className="w-full"
-                  unoptimized
-                />
-                <CardContent className="flex flex-col space-y-3 mt-6">
-                  <CardTitle className="font-medium">
-                    YouTube - Building...
-                  </CardTitle>
-                  <CardDescription className="flex flex-col space-y-3">
-                    <p className="">20 Mar - Present</p>
-                    <p className="text-sm">
-                      Hello, I was just learning about Drizzle and Google Cloud,
-                      so I thought of making a blog website.
-                    </p>
-                    <div className="flex gap-1 flex-wrap">
-                      {skills1.map((skill) => (
-                        <Button
-                          key={skill.value}
-                          variant={"outline"}
-                          size={"sm"}
-                          className="flex items-center text-black"
-                        >
-                          <Image
-                            src={`/svgs/${skill.image}.svg`}
-                            alt={skill.name}
-                            width={100}
-                            height={100}
-                            className={cn(
-                              "w-4 h-4",
-                              skill.value === "react" && "animate-spin-slow"
-                            )}
-                          />
-                          {skill.name}
-                        </Button>
-                      ))}
-                    </div>
-                  </CardDescription>
-                  <div className="flex items-center gap-2">
-                    <Link href={"https://youtube-tau-three.vercel.app/"}>
-                      <Button size={"sm"}>
-                        <Globe />
-                        Website
-                      </Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card className="relative">
-                <Image
-                  src={"/image.png"}
-                  alt="kok"
-                  width={100}
-                  height={100}
-                  className="w-full"
-                  unoptimized
-                />
-                <CardContent className="flex flex-col space-y-3 mt-6">
-                  <CardTitle className="font-medium">Medium Blog</CardTitle>
-                  <CardDescription className="flex flex-col space-y-3">
-                    <p className="">16 Mar - 18 Mar</p>
-                    <p className="text-sm">
-                      Hello, I was just learning about Hono and Cloudflare, so I
-                      thought of making a blog website.
-                    </p>
-                    <div className="flex gap-1 flex-wrap">
-                      {skills3.map((skill) => (
-                        <Button
-                          key={skill.value}
-                          variant={"outline"}
-                          size={"sm"}
-                          className="flex items-center text-black"
-                        >
-                          <Image
-                            src={`/svgs/${skill.image}.svg`}
-                            alt={skill.name}
-                            width={100}
-                            height={100}
-                            className={cn(
-                              "w-4 h-4",
-                              skill.value === "react" && "animate-spin-slow"
-                            )}
-                          />
-                          {skill.name}
-                        </Button>
-                      ))}
-                    </div>
-                  </CardDescription>
-                  <div className="flex items-center gap-2">
-                    <Link href={"https://medium-blog-dum8.vercel.app/signup"}>
-                      <Button size={"sm"}>
-                        <Globe />
-                        Website
-                      </Button>
-                    </Link>
-                    <Link
-                      href={"https://youtu.be/aHvaKUSh89w?si=P4roEHZoJZ_NvdzI"}
-                    >
-                      <Button size={"sm"} variant={"outline"}>
-                        <Image
-                          src={"/svgs/youtube1.svg"}
-                          width={100}
-                          height={100}
-                          alt="youtbe"
-                          className="w-5 h-5"
-                        />
-                        Watch me build this website
-                      </Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card className="relative">
-                <Image
-                  src={"/udemy-1.png"}
-                  alt="kok"
-                  width={100}
-                  height={100}
-                  className="w-full"
-                  unoptimized
-                />
-                <CardContent className="flex flex-col space-y-3 mt-6">
-                  <CardTitle className="font-medium">Udemy clone</CardTitle>
-                  <CardDescription className="flex flex-col space-y-3">
-                    <p className="">15 Feb - 01 Mar</p>
-                    <p className="text-sm">
-                      Hello, I was just learning about Next.js and Prisma, so I
-                      thought of making an LMS website.
-                    </p>
-                    <div className="flex gap-1 flex-wrap">
-                      {skills1.map((skill) => (
-                        <Button
-                          key={skill.value}
-                          variant={"outline"}
-                          size={"sm"}
-                          className="flex items-center text-black"
-                        >
-                          <Image
-                            src={`/svgs/${skill.image}.svg`}
-                            alt={skill.name}
-                            width={100}
-                            height={100}
-                            className={cn(
-                              "w-4 h-4",
-                              skill.value === "react" && "animate-spin-slow"
-                            )}
-                          />
-                          {skill.name}
-                        </Button>
-                      ))}
-                    </div>
-                  </CardDescription>
-                  <div>
-                    <Link href={"https://udemy-lms-clone.vercel.app/"}>
-                      <Button size={"sm"}>
-                        <Globe />
-                        Website
-                      </Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card className="relative">
-                <Image
-                  src={"/google.png"}
-                  alt="kok"
-                  width={100}
-                  height={100}
-                  className="w-full"
-                  unoptimized
-                />
-                <CardContent className="flex flex-col space-y-3 mt-6">
-                  <CardTitle className="font-medium">
-                    Google docs - Word docs
-                  </CardTitle>
-                  <CardDescription className="flex flex-col space-y-3">
-                    <p className="">10 Feb - Present</p>
-                    <p className="text-sm">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <div className="flex gap-1 flex-wrap">
-                      {skills2.map((skill) => (
-                        <Button
-                          key={skill.value}
-                          variant={"outline"}
-                          size={"sm"}
-                          className="flex items-center text-black"
-                        >
-                          <Image
-                            src={`/svgs/${skill.image}.svg`}
-                            alt={skill.name}
-                            width={100}
-                            height={100}
-                            className={cn(
-                              "w-4 h-4",
-                              skill.value === "react" && "animate-spin-slow"
-                            )}
-                          />
-                          {skill.name}
-                        </Button>
-                      ))}
-                    </div>
-                  </CardDescription>
-                  <div>
-                    <Button size={"sm"}>
-                      <Globe />
-                      Website
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <CardTemp
+                title="Youtube"
+                description="Hello, I was just learning about Drizzle and Google Cloud, so I thought of making a blog website."
+                duration="18 Mar - 20 Mar"
+                imageUrl="/download.png"
+                skills={skills1}
+                webLink="https://youtube-tau-three.vercel.app/"
+              />
+              <CardTemp
+                title="Medium-Blog"
+                duration="16 Mar - 18 Mar"
+                description="Hello, I was just learning about Hono and Cloudflare, so I thought of making a blog website."
+                skills={skills3}
+                imageUrl="/image.png"
+                webLink="https://medium-blog-dum8.vercel.app/signup"
+              />
+              <CardTemp
+                imageUrl="/udemy-2.png"
+                title="Learning management system"
+                description="Hello, I was just learning about Next.js and Prisma, so I thought of making an LMS website."
+                duration="15 Feb - 01 Mar"
+                skills={skills1}
+                webLink="https://udemy-lms-clone.vercel.app/"
+              />
             </div>
           </div>
         </div>

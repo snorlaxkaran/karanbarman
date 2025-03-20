@@ -30,9 +30,9 @@ export const skills = [
     image: "mongodb",
   },
   {
-    name: "MySQL",
-    value: "mysql",
-    image: "mysql",
+    name: "AWS",
+    value: "aws",
+    image: "aws",
   },
   {
     name: "PostgreSQL",
@@ -64,11 +64,7 @@ export const skills = [
     value: "cloudfare",
     image: "cloudfare",
   },
-  {
-    name: "AWS",
-    value: "aws",
-    image: "aws",
-  },
+
   {
     name: "Google Cloud",
     value: "gcp",

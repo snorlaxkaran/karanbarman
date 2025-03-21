@@ -221,6 +221,14 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <CardTemp
+                title="Finance SaaS Platform"
+                description="Finance SaaS Platform with ability to track your income and expenses, categorize transactions."
+                duration="21 Mar - Present"
+                imageUrl=""
+                skills={skills1}
+                webLink="/#"
+              />
+              <CardTemp
                 title="Youtube"
                 description="Hello, I was just learning about Drizzle and Google Cloud, so I thought of making a blog website."
                 duration="18 Mar - 20 Mar"

@@ -224,7 +224,7 @@ export default function Home() {
                 title="Finance SaaS Platform"
                 description="Finance SaaS Platform with ability to track your income and expenses, categorize transactions."
                 duration="21 Mar - Present"
-                imageUrl=""
+                imageUrl="/fin.png"
                 skills={skills1}
                 webLink="/#"
               />

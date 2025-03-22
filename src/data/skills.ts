@@ -60,6 +60,21 @@ export const skills = [
     image: "express",
   },
   {
+    name: "Zod",
+    value: "zod",
+    image: "zod",
+  },
+  {
+    name: "Zustand",
+    value: "zustand",
+    image: "zustand",
+  },
+  {
+    name: "Redux",
+    value: "redux",
+    image: "redux",
+  },
+  {
     name: "Docker",
     value: "docker",
     image: "docker",

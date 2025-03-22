@@ -88,7 +88,8 @@ export default function Home() {
                     height={100}
                     className={cn(
                       "size-3",
-                      skill.value === "react" && "animate-spin-slow"
+                      (skill.value === "react" && "animate-spin-slow") ||
+                        (skill.value === "redux" && "animate-spin-slow")
                     )}
                   />
                   {skill.name}

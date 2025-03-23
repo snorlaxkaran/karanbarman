@@ -1,5 +1,5 @@
 import MaxWidthWrapper from "@/components/shared/maxWidthWrapper";
-import { Dot, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import { skills } from "@/data/skills";
@@ -14,28 +14,6 @@ import "./globals.css";
 import MyGitHubActivity from "@/components/mygitactivity";
 import { skills3 } from "@/data/skills3";
 import CardTemp from "@/components/shared/card";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
-const WhatIDid = [
-  "Engineered a React.JS eCommerce application with product listing, cart, and checkout functionality",
-  "Implemented state management using Redux or Context API",
-  "Designed a responsive and user-friendly for a seamless shopping experience",
-  "Integrated API calls for product fetching and user authentication",
-  "Improved website performance with lazy loading, code splitting and optimized rendering",
-  "React.JS, HTML, CSS, JavaScript, TypeScript",
-];
-const WhatIDid2 = [
-  "	Developed and maintained user-friendly web applications using React.JS & Next.JS.",
-  "	Integrated APIs and worked with RESTful services to fetch and display dynamic data.",
-  "	Optimized application performance by improving load times and state management.",
-  "	Used Prisma ORM and worked with Node.JS, Express for full-stack development tasks.",
-  "	Next.JS, React.JS, Hono.JS, Express, PostgreSQL, AWS, Docker.",
-];
 
 export default function Home() {
   return (
@@ -127,95 +105,58 @@ export default function Home() {
               <h1 className="text-2xl font-medium">Experience</h1>
             </div>
             {/* Graduate Icon Container */}
-            <Accordion collapsible className="w-full" type="single">
-              <AccordionItem value="item-1">
-                <AccordionTrigger>
-                  <div className="flex gap-2">
-                    <div className="rounded-full w-9 h-9 border p-1 bg-gray-100 dark:bg-gray-500 flex items-center justify-center">
-                      <Image
-                        src={"/internship1.png"}
-                        alt="hat"
-                        width={20}
-                        height={20}
-                        className="block scale-150"
-                        unoptimized
-                      />
-                    </div>
+            <div className="flex gap-2">
+              <div className="rounded-full w-9 h-9 border p-1 bg-gray-100 dark:bg-gray-500 flex items-center justify-center">
+                <Image
+                  src={"/internship1.png"}
+                  alt="hat"
+                  width={20}
+                  height={20}
+                  className="block scale-150"
+                  unoptimized
+                />
+              </div>
 
-                    {/* Education Details */}
-                    <div className="flex flex-col">
-                      <div className=" flex gap-1 items-center">
-                        <h2 className="text-[#555]">Internship Studio</h2>
-                        <Check />
-                      </div>
-                      <div>
-                        <p className="text-[#333] text-lg">
-                          Frontend Developer
-                        </p>
-                        <p className="text-[#777] text-sm font-medium">
-                          Feb 2025 - March 2025 (1 m) • Internship • Remote
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent>
-                  <div className="pl-11 text-[15px] font-medium text-neutral-700">
-                    {WhatIDid.map((what, i) => (
-                      <p key={i} className="flex items-center">
-                        <Dot className="text-green-600 size-6" />
-                        {what}
-                      </p>
-                    ))}
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-            <Accordion collapsible className="w-full" type="single">
-              {" "}
-              <AccordionItem value="item-1">
-                <AccordionTrigger>
-                  <div className="flex gap-2">
-                    {/* Graduate Icon Container */}
-                    <div className="rounded-full w-9 h-9 border p-1 bg-gray-100 dark:bg-gray-500 flex items-center justify-center">
-                      <Image
-                        src={"/z1.png"}
-                        alt="hat"
-                        width={20}
-                        height={20}
-                        className="block"
-                        unoptimized
-                      />
-                    </div>
-                    {/* Education Details */}
-                    <div className="flex flex-col">
-                      <div className=" flex gap-1 items-center">
-                        <h2 className="text-[#555]">Grocient</h2>
-                        <Check />
-                      </div>
-                      <div>
-                        <p className="text-[#333] text-lg">
-                          Fullstack Developer
-                        </p>
-                        <p className="text-[#777] text-sm font-medium">
-                          Mar 2024 - Sept 2024 (6 m) • Internship • Remote
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent>
-                  <div className="pl-11 text-[15px] font-medium text-neutral-700">
-                    {WhatIDid2.map((what, i) => (
-                      <p key={i} className="flex items-center">
-                        <Dot className="text-green-600 size-6" />
-                        {what}
-                      </p>
-                    ))}
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
+              {/* Education Details */}
+              <div className="flex flex-col">
+                <div className=" flex gap-1 items-center">
+                  <h2 className="text-[#555]">Internship Studio</h2>
+                  <Check />
+                </div>
+                <div>
+                  <p className="text-[#333] text-lg">Frontend Developer</p>
+                  <p className="text-[#777] text-sm font-medium">
+                    Feb 2025 - Mar 2025 (1 m) • Internship • Remote
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-2">
+              {/* Graduate Icon Container */}
+              <div className="rounded-full w-9 h-9 border p-1 bg-gray-100 dark:bg-gray-500 flex items-center justify-center">
+                <Image
+                  src={"/z1.png"}
+                  alt="hat"
+                  width={20}
+                  height={20}
+                  className="block"
+                  unoptimized
+                />
+              </div>
+              {/* Education Details */}
+              <div className="flex flex-col">
+                <div className=" flex gap-1 items-center">
+                  <h2 className="text-[#555]">Grocient</h2>
+                  <Check />
+                </div>
+                <div>
+                  <p className="text-[#333] text-lg">Fullstack Developer</p>
+                  <p className="text-[#777] text-sm font-medium">
+                    Mar 2024 - Sept 2024 (6 m) • Internship • Remote
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="border-b border-x border-neutral-300/80 py-10">

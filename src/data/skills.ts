@@ -59,11 +59,15 @@ export const skills = [
     value: "mongodb",
     image: "mongodb",
   },
-
   {
     name: "PostgreSQL",
     value: "postgresql",
     image: "postgresql",
+  },
+  {
+    name: "Redis",
+    value: "redis",
+    image: "redis",
   },
   {
     name: "Prisma",
@@ -75,7 +79,6 @@ export const skills = [
     value: "drizzle",
     image: "drizzle",
   },
-
   {
     name: "Docker",
     value: "docker",
@@ -87,18 +90,8 @@ export const skills = [
     image: "aws",
   },
   {
-    name: "Azure",
-    value: "azure",
-    image: "azure",
-  },
-  {
     name: "Cloudfare",
     value: "cloudfare",
     image: "cloudfare",
-  },
-  {
-    name: "Google Cloud",
-    value: "gcp",
-    image: "gcp",
   },
 ];

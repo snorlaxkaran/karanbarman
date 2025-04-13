@@ -65,6 +65,11 @@ export const skills = [
     image: "postgresql",
   },
   {
+    name: "RabbitMQ",
+    value: "rabbitmq",
+    image: "rabbitmq",
+  },
+  {
     name: "Redis",
     value: "redis",
     image: "redis",

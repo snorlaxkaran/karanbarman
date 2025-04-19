@@ -14,6 +14,7 @@ import "./globals.css";
 import MyGitHubActivity from "@/components/mygitactivity";
 import { skills3 } from "@/data/skills3";
 import CardTemp from "@/components/shared/card";
+import { skills4 } from "@/data/skills4";
 
 export default function Home() {
   return (
@@ -108,7 +109,7 @@ export default function Home() {
             <div className="flex gap-2">
               <div className="rounded-full w-9 h-9 border p-1 bg-gray-100 dark:bg-gray-500 flex items-center justify-center">
                 <Image
-                  src={"/internship1.png"}
+                  src={"/grocient.jpg"}
                   alt="hat"
                   width={20}
                   height={20}
@@ -117,22 +118,20 @@ export default function Home() {
                 />
               </div>
 
-              {/* Education Details */}
               <div className="flex flex-col">
                 <div className=" flex gap-1 items-center">
-                  <h2 className="text-[#555]">Internship Studio</h2>
+                  <h2 className="text-[#555]">Grocient Infotech</h2>
                   <Check />
                 </div>
                 <div>
-                  <p className="text-[#333] text-lg">Frontend Developer</p>
+                  <p className="text-[#333] text-lg">Backend Developer</p>
                   <p className="text-[#777] text-sm font-medium">
-                    Feb 2025 - Mar 2025 (1 m) • Internship • Remote
+                    Jan 2023 – Feb 2025 • Full–Time • on–site
                   </p>
                 </div>
               </div>
             </div>
-            <div className="flex gap-2">
-              {/* Graduate Icon Container */}
+            {/* <div className="flex gap-2">
               <div className="rounded-full w-9 h-9 border p-1 bg-gray-100 dark:bg-gray-500 flex items-center justify-center">
                 <Image
                   src={"/z1.png"}
@@ -143,7 +142,6 @@ export default function Home() {
                   unoptimized
                 />
               </div>
-              {/* Education Details */}
               <div className="flex flex-col">
                 <div className=" flex gap-1 items-center">
                   <h2 className="text-[#555]">Grocient</h2>
@@ -156,7 +154,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="border-b border-x border-neutral-300/80 py-10">
@@ -222,6 +220,14 @@ export default function Home() {
               <h1 className="text-2xl font-medium">Projects</h1>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <CardTemp
+                title="microservices-inventory-order"
+                description="A simple microservices-based inventory and order management system built using Node.js, RabbitMQ."
+                duration="21 Mar - Present"
+                imageUrl="/fin.png"
+                skills={skills4}
+                webLink="https://github.com/snorlaxkaran/microservices-inventory/tree/main"
+              />
               <CardTemp
                 title="Finance SaaS Platform"
                 description="Finance SaaS Platform with ability to track your income and expenses, categorize transactions."

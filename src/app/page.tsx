@@ -69,7 +69,7 @@ export default function Home() {
             </div>
             <div>
               <p className="text-[#666]">
-                {/* TODO: SUMMARY */}Full Stack Developer with over a year of
+                {/* TODO: SUMMARY */}Full Stack Developer with over two year&apos; of
                 experience building scalable, production-ready applications.
                 Currently developing a document editor to simplify collaborative
                 writing. Passionate about crafting seamless user experiences and

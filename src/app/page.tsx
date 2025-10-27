@@ -69,11 +69,11 @@ export default function Home() {
             </div>
             <div>
               <p className="text-[#666]">
-                {/* TODO: SUMMARY */}Full Stack Developer with over two year&apos; of
-                experience building scalable, production-ready applications.
-                Currently developing a document editor to simplify collaborative
-                writing. Passionate about crafting seamless user experiences and
-                robust systems using modern technologies.
+                {/* TODO: SUMMARY */}Full Stack Developer with over two
+                year&apos; of experience building scalable, production-ready
+                applications. Currently developing a document editor to simplify
+                collaborative writing. Passionate about crafting seamless user
+                experiences and robust systems using modern technologies.
               </p>
             </div>
             <div className="flex flex-wrap justify-center">
@@ -107,12 +107,12 @@ export default function Home() {
             </div>
             {/* Graduate Icon Container */}
             <div className="flex gap-2">
-              <div className="rounded-full w-9 h-9 border p-1 bg-gray-100 dark:bg-gray-500 flex items-center justify-center">
+              <div className="rounded-full w-11 h-9 border p-1 bg-gray-100 dark:bg-gray-500 flex items-center justify-center">
                 <Image
-                  src={"/grocient.jpg"}
+                  src={"/eipl.png"}
                   alt="hat"
-                  width={20}
-                  height={20}
+                  width={8}
+                  height={8}
                   className="block scale-150"
                   unoptimized
                 />
@@ -120,14 +120,44 @@ export default function Home() {
 
               <div className="flex flex-col">
                 <div className=" flex gap-1 items-center">
-                  <h2 className="text-[#555]">Grocient Infotech</h2>
+                  <h2 className="text-[#555]">
+                    Efficient Illumination Private Limited
+                  </h2>
                   <Check />
                 </div>
                 <div>
-                  <p className="text-[#333] text-lg">Backend Developer</p>
-                  <p className="text-[#777] text-sm font-medium">
-                    Jan 2023 – Feb 2025 • Full–Time • on–site
+                  <p className="text-[#333] text-lg">
+                    Data Analyst | Backend & Frontend Engineer
                   </p>
+                  <p className="text-[#777] text-sm font-medium mb-2">
+                    July 2025 – Present • Full–Time • on–site
+                  </p>
+                  <ul>
+                    <li className="text-[#777] text-sm font-medium">
+                      1. Built a web app to collect and manage on-field data for
+                      street-light installation and removal.
+                    </li>
+                    <li className="text-[#777] text-sm font-medium">
+                      2. Automated reporting pipelines for authorities like
+                      Jaipur Municipal Corporation and JVVNL, improving payment
+                      processing efficiency.
+                    </li>
+                    <li className="text-[#777] text-sm font-medium">
+                      3. Conducted a 10-year data analysis to optimize power
+                      consumption, increasing savings from 77% to 89% and
+                      contributing ₹97 crore in company profit.
+                    </li>
+                    <li className="text-[#777] text-sm font-medium">
+                      4. Created PowerPoint presentations and Excel dashboards
+                      for the Public Lighting Payment Project, aiding project
+                      tracking and reporting for a ₹567 crore initiative.
+                    </li>
+                    <li className="text-[#777] text-sm font-medium">
+                      5. Collaborated with Schnell on their automated lighting
+                      system, integrating all Jaipur streetlights through CCMS
+                      servers for centralized monitoring and control.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -167,23 +197,23 @@ export default function Home() {
               {/* Graduate Icon Container */}
               <div className="rounded-full w-9 h-9 border p-1 bg-gray-100 dark:bg-gray-500 flex items-center justify-center">
                 <Image
-                  src={"/svgs/graduate.svg"}
+                  src={"/BITS_Pilani-Logo.svg"}
                   alt="hat"
-                  width={20}
-                  height={20}
+                  width={30}
+                  height={30}
                   className="block"
                 />
               </div>
               {/* Education Details */}
               <div className="flex flex-col">
                 <div className="text-lg font-medium">
-                  <h2>University of Rajasthan</h2>
+                  <h2>Birla Institute of Technology & Science, Pilani</h2>
                 </div>
                 <div>
                   <p className="text-[#666]">
-                    B.Sc, Physics, Chemistry & Mathematics
+                    Bachelor of Science in Computer Science
                   </p>
-                  <p className="text-[#888]">2022 - 2025</p>
+                  <p className="text-[#888]">2026 - 2030</p>
                 </div>
               </div>
             </div>
@@ -204,7 +234,7 @@ export default function Home() {
                   <h2>Gyan Vidhya Mandir</h2>
                 </div>
                 <div>
-                  <p className="text-[#666]">12th, Science</p>
+                  <p className="text-[#666]">Higher Secondary, Science</p>
                   <p className="text-[#888]">2020 - 2022</p>
                 </div>
               </div>

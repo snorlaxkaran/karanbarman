@@ -121,7 +121,7 @@ export default function Home() {
               <div className="flex flex-col">
                 <div className=" flex gap-1 items-center">
                   <h2 className="text-[#555]">
-                    Efficient Illumination Private Limited
+                    Efficient Illumination Private Limited karan barman
                   </h2>
                   <Check />
                 </div>

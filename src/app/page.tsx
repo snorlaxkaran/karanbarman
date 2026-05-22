@@ -177,8 +177,8 @@ export default function Home() {
             <div className="flex gap-2">
               <div className="rounded-full w-20 h-10 border p-1 bg-gray-100 dark:bg-gray-500 flex items-center justify-center">
                 <Image
-                  src={"/eipl.png"}
-                  alt="Efficient Illumination"
+                  src={"/svgs/graduate.svg"}
+                  alt=""
                   width={8}
                   height={8}
                   className="block scale-150"

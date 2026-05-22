@@ -4,17 +4,12 @@ import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import { skills } from "@/data/skills";
 import Link from "next/link";
-import ProjectsSvg from "@/data/projects";
 import Check from "@/data/icons/check";
 
 import { cn } from "@/lib/utils";
-import { skills1 } from "@/data/skills1";
 import { technologies } from "@/data/technologies";
-import "./globals.css";
+// import "./globals.css";
 import MyGitHubActivity from "@/components/mygitactivity";
-import { skills3 } from "@/data/skills3";
-import CardTemp from "@/components/shared/card";
-import { skills4 } from "@/data/skills4";
 
 export default function Home() {
   return (
@@ -69,11 +64,15 @@ export default function Home() {
             </div>
             <div>
               <p className="text-[#666]">
-                {/* TODO: SUMMARY */}Full Stack Developer with over two
-                year&apos; of experience building scalable, production-ready
-                applications. Currently developing a document editor to simplify
-                collaborative writing. Passionate about crafting seamless user
-                experiences and robust systems using modern technologies.
+                {/* TODO: SUMMARY */}High-impact Data & Automation Analyst
+                specializing in the architecture of production-grade Python
+                tools that eliminate critical manual bottlenecks. Proven track
+                record of engineering automated solutions that save teams
+                500–900 minutes of manual labour daily through intelligent
+                scripting and process optimization. Expertise includes Python,
+                SQL, and advanced data analysis to drive operational efficiency
+                and informed decision-making within complex inventory and supply
+                chain environments.
               </p>
             </div>
             <div className="flex flex-wrap justify-center">
@@ -90,7 +89,7 @@ export default function Home() {
                     className={cn(
                       "size-3",
                       (skill.value === "react" && "animate-spin-slow") ||
-                        (skill.value === "redux" && "animate-spin-slow")
+                        (skill.value === "redux" && "animate-spin-slow"),
                     )}
                   />
                   {skill.name}
@@ -105,12 +104,81 @@ export default function Home() {
             <div>
               <h1 className="text-2xl font-medium">Experience</h1>
             </div>
-            {/* Graduate Icon Container */}
+
+            {/* Tribe Amrapali Experience */}
             <div className="flex gap-2">
-              <div className="rounded-full w-11 h-9 border p-1 bg-gray-100 dark:bg-gray-500 flex items-center justify-center">
+              <div className="rounded-full w-20 h-10 border p-1 bg-gray-100 dark:bg-gray-500 flex items-center justify-center">
+                <Image
+                  src={"/svgs/tribelogo2024.webp"}
+                  alt="Tribe Amrapali"
+                  width={20}
+                  height={20}
+                  className="block"
+                />
+              </div>
+
+              <div className="flex flex-col">
+                <div className=" flex gap-1 items-center">
+                  <h2 className="text-[#555]">Tribe Amrapali</h2>
+                  <Check />
+                </div>
+                <div>
+                  <p className="text-[#333] text-lg">Inventory Assistant</p>
+                  <p className="text-[#777] text-sm font-medium mb-2">
+                    January 2026 – Present • Full–Time
+                  </p>
+                  <ul>
+                    <li className="text-[#777] text-sm font-medium">
+                      1. Architected and maintain Python automation tools
+                      utilized daily by 10+ team members to manage jewellery
+                      inventory data, directly replacing manual workflows with
+                      data-driven restocking protocols.
+                    </li>
+                    <li className="text-[#777] text-sm font-medium">
+                      2. Engineered a Central Stock Availability Checker that
+                      saves 300–400 minutes of manual work daily by providing
+                      instant visibility into stock-outs across all stores and
+                      franchisees.
+                    </li>
+                    <li className="text-[#777] text-sm font-medium">
+                      3. Optimized asset management by developing a Bulk Image
+                      Downloader & SKU Renamer that processes 300 product images
+                      in under 13 seconds, replacing a previous 2-hour manual
+                      process.
+                    </li>
+                    <li className="text-[#777] text-sm font-medium">
+                      4. Maintained a suite of auxiliary Python scripts and
+                      custom automation tools that collectively contribute to a
+                      total department-wide saving of 900 minutes of manual
+                      processing daily.
+                    </li>
+                    <li className="text-[#777] text-sm font-medium">
+                      5. Performed end-to-end collection analysis by
+                      cross-referencing sales data and stock levels to drive
+                      informed purchase orders and significantly reduce
+                      overstock.
+                    </li>
+                    <li className="text-[#777] text-sm font-medium">
+                      6. Coordinated shipment and dispatch operations pan-India
+                      across all store locations, ensuring documentation
+                      accuracy and timely fulfilment.
+                    </li>
+                    <li className="text-[#777] text-sm font-medium">
+                      7. Maintained 100% stock record accuracy by reconciling
+                      vendor invoices and physical piece counts against system
+                      data.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Efficient Illumination Experience */}
+            <div className="flex gap-2">
+              <div className="rounded-full w-20 h-10 border p-1 bg-gray-100 dark:bg-gray-500 flex items-center justify-center">
                 <Image
                   src={"/eipl.png"}
-                  alt="hat"
+                  alt="Efficient Illumination"
                   width={8}
                   height={8}
                   className="block scale-150"
@@ -130,7 +198,7 @@ export default function Home() {
                     Data Analyst | Backend & Frontend Engineer
                   </p>
                   <p className="text-[#777] text-sm font-medium mb-2">
-                    July 2025 – Present • Full–Time • on–site
+                    July 2025 – January 2026 • Full–Time • on–site
                   </p>
                   <ul>
                     <li className="text-[#777] text-sm font-medium">
@@ -161,30 +229,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* <div className="flex gap-2">
-              <div className="rounded-full w-9 h-9 border p-1 bg-gray-100 dark:bg-gray-500 flex items-center justify-center">
-                <Image
-                  src={"/z1.png"}
-                  alt="hat"
-                  width={20}
-                  height={20}
-                  className="block"
-                  unoptimized
-                />
-              </div>
-              <div className="flex flex-col">
-                <div className=" flex gap-1 items-center">
-                  <h2 className="text-[#555]">Grocient</h2>
-                  <Check />
-                </div>
-                <div>
-                  <p className="text-[#333] text-lg">Fullstack Developer</p>
-                  <p className="text-[#777] text-sm font-medium">
-                    Mar 2024 - Sept 2024 (6 m) • Internship • Remote
-                  </p>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
         <div className="border-b border-x border-neutral-300/80 py-10">
@@ -241,58 +285,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="border-b border-x border-neutral-300/80 py-10">
-          {/* TODO: Projects */}
-
-          <div className="flex flex-col gap-6 py-2 px-4">
-            <div className="flex items-center gap-2 text-lg sm:text-xl">
-              <ProjectsSvg />
-              <h1 className="text-2xl font-medium">Projects</h1>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <CardTemp
-                title="microservices-inventory-order"
-                description="A simple microservices-based inventory and order management system built using Node.js, RabbitMQ."
-                duration="21 Mar - Present"
-                imageUrl="/fin.png"
-                skills={skills4}
-                webLink="https://github.com/snorlaxkaran/microservices-inventory/tree/main"
-              />
-              <CardTemp
-                title="Finance SaaS Platform"
-                description="Finance SaaS Platform with ability to track your income and expenses, categorize transactions."
-                duration="21 Mar - Present"
-                imageUrl="/fin.png"
-                skills={skills1}
-                webLink="/#"
-              />
-              <CardTemp
-                title="Youtube"
-                description="Hello, I was just learning about Drizzle and Google Cloud, so I thought of making a blog website."
-                duration="18 Mar - 20 Mar"
-                imageUrl="/download.png"
-                skills={skills1}
-                webLink="https://youtube-tau-three.vercel.app/"
-              />
-              <CardTemp
-                title="Medium-Blog"
-                duration="16 Mar - 18 Mar"
-                description="Hello, I was just learning about Hono and Cloudflare, so I thought of making a blog website."
-                skills={skills3}
-                imageUrl="/image.png"
-                webLink="https://medium-blog-dum8.vercel.app/signup"
-              />
-              <CardTemp
-                imageUrl="/udemy-2.png"
-                title="Learning management system"
-                description="Hello, I was just learning about Next.js and Prisma, so I thought of making an LMS website."
-                duration="15 Feb - 01 Mar"
-                skills={skills1}
-                webLink="https://udemy-lms-clone.vercel.app/"
-              />
-            </div>
-          </div>
-        </div>
         {/* TODO: GitHub */}
         <div className="border-b border-x border-neutral-300/80 py-10">
           <div className="flex flex-col gap-6 py-2 px-4">
@@ -314,7 +306,7 @@ export default function Home() {
                     height={100}
                     className={cn(
                       "size-3",
-                      tech.value === "react" && "animate-spin-slow"
+                      tech.value === "react" && "animate-spin-slow",
                     )}
                   />
                   {tech.name}
